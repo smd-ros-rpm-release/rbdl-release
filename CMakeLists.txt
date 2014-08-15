@@ -161,6 +161,3 @@ INSTALL (
   FILES  ${CMAKE_CURRENT_BINARY_DIR}/rbdl.pc
   DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig
   )
-
-# Install catkin package.xml
-install(FILES package.xml DESTINATION share/rbdl)
