@@ -1,0 +1,23 @@
+From 2edc454e2ad056fd52a167d48aafdf2270572338 Mon Sep 17 00:00:00 2001
+From: Isura Ranatunga <isura@ieee.org>
+Date: Fri, 15 Aug 2014 12:38:44 -0500
+Subject: [PATCH] Added install rule for package.xml
+
+---
+ CMakeLists.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 4f700a6..b09f04c 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -161,3 +161,6 @@ INSTALL (
+   FILES  ${CMAKE_CURRENT_BINARY_DIR}/rbdl.pc
+   DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig
+   )
++
++# Install catkin package.xml
++install(FILES package.xml DESTINATION share/rbdl)
+-- 
+1.9.1
+
